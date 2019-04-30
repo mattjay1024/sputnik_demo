@@ -1,0 +1,7 @@
+<launch>
+	<arg name="wander" default="true" />
+	<arg name="route_follow" default="true" />
+	<node pkg="sputnik_demo" type="demo" name="sputnik_demo"> 
+		<param name="enable_wandering" value="$(arg wander)" />
+		<param name="enable_route" value="$(arg route_follow)" />
+	</node>
